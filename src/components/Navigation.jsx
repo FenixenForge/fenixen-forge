@@ -96,30 +96,30 @@ export default function Navigation() {
         <div className={`nav-redes ${isCollapsed ? "vertical" : ""}`}>
           <ul>
             <li>
-              <a href="https://facebook.com">
-                <Icon icon="ic:baseline-facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
+              <a href="https://x.com/Fenixen_Forge">
                 <Icon icon="prime:twitter" />
               </a>
             </li>
             <li>
-              <a href="https://discord.com">
+              <a href="https://discord.gg/bMXjeJQppj">
                 <Icon icon="ic:baseline-discord" />
               </a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="https://youtube.com">
+              <a href="https://www.youtube.com/@Fenixen_Forge">
                 <Icon icon="mdi:youtube" />
               </a>
             </li>
             <li>
-              <a href="https://tiktok.com">
+              <a href="https://www.tiktok.com/@fenixen_forge">
                 <Icon icon="ic:baseline-tiktok" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/fenixen_forge">
+                <Icon icon="mdi:twitch" />
               </a>
             </li>
           </ul>
