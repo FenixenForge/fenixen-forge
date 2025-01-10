@@ -96,29 +96,49 @@ export default function Navigation() {
         <div className={`nav-redes ${isCollapsed ? "vertical" : ""}`}>
           <ul>
             <li>
-              <a href="https://x.com/Fenixen_Forge">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/Fenixen_Forge"
+              >
                 <Icon icon="prime:twitter" />
               </a>
             </li>
             <li>
-              <a href="https://discord.gg/bMXjeJQppj">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://discord.gg/bMXjeJQppj"
+              >
                 <Icon icon="ic:baseline-discord" />
               </a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="https://www.youtube.com/@Fenixen_Forge">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/@Fenixen_Forge"
+              >
                 <Icon icon="mdi:youtube" />
               </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/@fenixen_forge">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tiktok.com/@fenixen_forge"
+              >
                 <Icon icon="ic:baseline-tiktok" />
               </a>
             </li>
             <li>
-              <a href="https://www.twitch.tv/fenixen_forge">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.twitch.tv/fenixen_forge"
+              >
                 <Icon icon="mdi:twitch" />
               </a>
             </li>
