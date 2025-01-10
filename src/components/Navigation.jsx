@@ -18,8 +18,8 @@ export default function Navigation() {
     { href: "/bots", label: "Bots", icon: "fluent:bot-16-filled" },
     { href: "/plugins", label: "Plugins", icon: "mynaui:tool-solid" },
     { href: "/mods", label: "Mods", icon: "bi:nut-fill" },
-    { href: "/resources", label: "Resources", icon: "material-symbols:folder" },
     { href: "/setups", label: "Setups", icon: "material-symbols:computer" },
+    { href: "/resources", label: "Resources", icon: "material-symbols:folder" },
   ];
 
   const handleScroll = () => {
