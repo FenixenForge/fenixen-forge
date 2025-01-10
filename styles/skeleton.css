@@ -1,0 +1,183 @@
+@import url(./variables.css);
+
+.skeleton-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25vh, 1fr));
+  gap: 16px;
+  padding: 1vh;
+}
+
+.skeleton-card {
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vh;
+  height: 35vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+.skeleton-image,
+.skeleton-text {
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  animation: skeleton-pulse 1.5s infinite;
+  -webkit-animation: skeleton-pulse 1.5s infinite;
+}
+
+.skeleton-image {
+  height: 150px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.skeleton-text {
+  height: 16px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.skeleton-text.short {
+  width: 50%;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Animación de Carga (Skeleton) */
+@keyframes skeleton-pulse {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Estilo general para el esqueleto del producto */
+.skeleton-product-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Skeleton para la imagen del producto */
+.skeleton-product-view .product-view-content-img {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+/* Skeleton para la información del producto */
+.skeleton-product-view .product-view-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Skeleton para el nombre del producto */
+.skeleton-product-view .product-view-content-info h1 {
+  width: 60%;
+  height: 30px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  border-radius: 8px;
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+/* Skeleton para las descripciones */
+.skeleton-product-view .product-view-content-info p {
+  height: 16px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  border-radius: 8px;
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+/* Skeleton para los botones */
+.skeleton-product-view .product-view-content-info .skeleton-button {
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  border-radius: 8px;
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+/* Skeleton para los enlaces de la descripción */
+.skeleton-product-view
+  .product-view-content-descript
+  .product-view-content-descript-mas {
+  height: 50px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  animation: skeleton-pulse 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Skeleton para las descripciones adicionales */
+.skeleton-product-view .product-view-content-descriptions {
+  height: 150px;
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  animation: skeleton-pulse 1.5s infinite;
+  border-radius: 8px;
+}
+
+.index-skeleton-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vh, 1fr));
+  padding: 1vh;
+}
+
+.index-skeleton-card {
+  margin-right: 1.5vh;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vh;
+  height: 30vh;
+  width: 22vh;
+  box-shadow: 0, 2px, 4px, rgba(0, 0, 0, 0.322);
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+.index-skeleton-image,
+.index-skeleton-text {
+  background: linear-gradient(10deg, #131314 25%, #19191a 50%, #202020 75%);
+  background-size: 150% 100%;
+  animation: skeleton-pulse 1.5s infinite;
+}
+
+.index-skeleton-image {
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.index-skeleton-text {
+  height: 16px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.index-skeleton-text.short {
+  width: 50%;
+}

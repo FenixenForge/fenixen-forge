@@ -1,0 +1,46 @@
+:root {
+  --bg: #060607;
+  --bg-card: #161617;
+  --bg-btn: #111112;
+  --bg-btn-hover: #212121;
+  --bg-btn-active: #bf0436;
+  --bg-icon-btn: #161617;
+  --bg-icon-btn-hover: #363636;
+  --bg-icon-btn-active: #f2eed8;
+  --bg-icon-color: #606060;
+  --bg-icon-color-hover: #606060;
+  --bg-icon-color-active: #060607;
+  --bg-btn-card: #740221;
+  --bg-btn-card-hover: #bf0436;
+  --bg-text-title: #f4f4f4;
+  --bg-text-subtitle: #c9c9c9;
+  --bg-text-btn-active: #ffffff;
+  --bg-text-btn: #dfdfdf;
+  --font-text-description: "Roboto", sans-serif;
+  --font-text-title: "Russo", sans-serif;
+  --font-text-subtitle: "Nunito", sans-serif;
+  --font-text-btn: "Poppins", sans-serif;
+  --transition: ease-in 0.3s;
+  --bg-linea: #212121;
+  --bg-icon-redes: #808080;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins.ttf");
+}
+
+@font-face {
+  font-family: "Russo";
+  src: url("/fonts/Russo.ttf");
+}
