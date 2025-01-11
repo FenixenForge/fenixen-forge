@@ -53,7 +53,7 @@ export default function Home() {
     loadProducts();
   }, []);
 
-  const image_url = `https://drive.google.com/uc?export=view&id=${image_url}`;
+  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
 
   return (
     <>
