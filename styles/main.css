@@ -632,7 +632,7 @@ body {
   }
 
   .category-product-img {
-    margin: 2.5vh;
+    margin: 0.25vh;
     background-color: var(--bg-linea);
     border-radius: 1vh;
     width: 90%;
@@ -1012,7 +1012,7 @@ body {
   .tops-product-download ul li img {
     width: 90%;
     margin: 5%;
-    height: 90%;
+    height: 50%;
     object-fit: cover;
     border-radius: 1.5vh;
     -webkit-border-radius: 1.5vh;
