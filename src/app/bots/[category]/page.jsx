@@ -91,10 +91,7 @@ const CategoryPage = () => {
             <li key={product.id} className="category-product-item">
               <Link href={`/bots/${product.category}/${product.name}`}>
                 <div className="category-product-img">
-                  <img
-                    src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
-                    alt={product.name}
-                  />
+                  <img src={product.image_url} alt={product.name} />
                 </div>
                 <h2>{product.name}</h2>
                 <span>

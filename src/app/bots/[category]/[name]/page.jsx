@@ -91,11 +91,7 @@ const ProductPage = () => {
         <div className="product-view-content">
           <div className="product-view-content-img">
             {product.image && (
-              <img
-                src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
-                width={100}
-                alt={product.name}
-              />
+              <img src={product.image_url} width={100} alt={product.name} />
             )}
           </div>
           <div className="product-view-content-info">
@@ -173,12 +169,7 @@ const ProductPage = () => {
                 <div key={desc.id} className="product-description-itemss">
                   <h3> {desc.titulo} </h3>
                   <p>{desc.description}</p>
-                  {desc.image && (
-                    <img
-                      src={`https://drive.google.com/uc?export=view&id=${desc.image_url}`}
-                      alt={desc.titulo}
-                    />
-                  )}
+                  {desc.image && <img src={desc.image_url} alt={desc.titulo} />}
                 </div>
               ))
             ) : (

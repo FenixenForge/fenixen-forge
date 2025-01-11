@@ -95,10 +95,7 @@ export default function Home() {
               ))
             : topDownloaded.map((product) => (
                 <li key={product.id}>
-                  <img
-                    src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
-                    alt={product.name}
-                  />
+                  <img src={product.image_url} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>
                     <strong>{product.category}</strong>
@@ -122,10 +119,7 @@ export default function Home() {
               ))
             : latestProducts.map((product) => (
                 <li key={product.id}>
-                  <img
-                    src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
-                    alt={product.name}
-                  />
+                  <img src={product.image_url} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
                   <Link href={`/bots/${product.category}/${product.name}`}>
@@ -146,10 +140,7 @@ export default function Home() {
               ))
             : botsProducts.map((product) => (
                 <li key={product.id}>
-                  <img
-                    src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
-                    alt={product.name}
-                  />
+                  <img src={product.image_url} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
                   <Link href={`/bots/${product.category}/${product.name}`}>
