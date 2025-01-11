@@ -44,7 +44,7 @@ const Category = () => {
     );
   }
 
-  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
+  const image_url = `https://drive.google.com/uc?export=view&id=${products.image_url}`;
 
   if (error) return <div>{error}</div>;
   if (!products.length) return <div>No products found.</div>;
