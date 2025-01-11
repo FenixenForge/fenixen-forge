@@ -104,7 +104,7 @@ const ProductVersionHistoryPage = () => {
       <div className="product-view-container">
         <div className="product-view-content">
           <div className="product-view-content-img">
-            {product.image && (
+            {product.image_url && (
               <img src={product.image_url} width={100} alt={product.name} />
             )}
           </div>
