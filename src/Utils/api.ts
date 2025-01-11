@@ -5,7 +5,7 @@ const getToken = () => {
   if (typeof window !== "undefined") {
     // Estamos en el navegador, por lo que podemos acceder a localStorage
     return localStorage.getItem(
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1ODc2MTAyLCJpYXQiOjE3MzU4NzU4MDIsImp0aSI6IjdjZmI5YmQ5ODhjNzQyYjNiMTFlOTZjMDJjYzQzYTZjIiwidXNlcl9pZCI6MX0._7kDar-CoJ8RBBiiJHZ1mllWxm_pfuzKUPAc9twL7U8"
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NTY4NTM2LCJpYXQiOjE3MzY1NjgyMzYsImp0aSI6ImU4ZjBjMTk0YWRjNTQ0ODc4YTE0Y2Q2Njg2NWJkMGFkIiwidXNlcl9pZCI6MX0.egdbXp1WeO8G77Fs_8wrZPwpnbNBGupuBIxnXUJpWNg"
     );
   }
   return null; // En el servidor, no intentamos acceder a localStorage
