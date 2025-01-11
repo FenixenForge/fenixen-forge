@@ -75,7 +75,8 @@ const ProductVersionHistoryPage = () => {
 
   const displayCategory = category.replace(/%20/g, " ");
   const displayName = product.name.replace(/%20/g, " ");
-  const BaseURL = "https://api.fenixenforge.com/";
+  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
+
   return (
     <div>
       <Head>
@@ -105,7 +106,7 @@ const ProductVersionHistoryPage = () => {
         <div className="product-view-content">
           <div className="product-view-content-img">
             {product.image && (
-              <img src={product.image_url} width={100} alt={product.name} />
+              <img src={image_url} width={100} alt={product.name} />
             )}
           </div>
           <div className="product-view-content-info">

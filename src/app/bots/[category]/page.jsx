@@ -81,7 +81,7 @@ const CategoryPage = () => {
   if (!products.length) return <div>No products found in this category.</div>;
 
   const displayCategory = category?.replace(/%20/g, " ");
-  const BaseURL = "https://api.fenixenforge.com/";
+  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
   return (
     <>
       <div className="category-products-container">
@@ -91,7 +91,7 @@ const CategoryPage = () => {
             <li key={product.id} className="category-product-item">
               <Link href={`/bots/${product.category}/${product.name}`}>
                 <div className="category-product-img">
-                  <img src={product.image_url} alt={product.name} />
+                  <img src={image_url} alt={product.name} />
                 </div>
                 <h2>{product.name}</h2>
                 <span>

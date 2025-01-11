@@ -66,7 +66,9 @@ const ProductPage = () => {
     product.image || `/images/${displayName.toLowerCase()}-og.jpg`;
   const metaTwitterImage =
     product.image || `/images/${displayName.toLowerCase()}-twitter.jpg`;
-  const BaseURL = "https://api.fenixenforge.com/";
+  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
+  const image_desc = `https://drive.google.com/uc?export=view&id=${desc.image_url}`;
+
   return (
     <div>
       <Head>
@@ -89,7 +91,7 @@ const ProductPage = () => {
         <div className="product-view-content">
           <div className="product-view-content-img">
             {product.image && (
-              <img src={product.image_url} width={100} alt={product.name} />
+              <img src={image_url} width={100} alt={product.name} />
             )}
           </div>
           <div className="product-view-content-info">
@@ -167,12 +169,7 @@ const ProductPage = () => {
                 <div key={desc.id} className="product-description-itemss">
                   <h3> {desc.titulo} </h3>
                   <p>{desc.description}</p>
-                  {desc.image && (
-                    <img
-                      src={`http://127.0.0.1:8000${desc.image}`}
-                      alt={desc.titulo}
-                    />
-                  )}
+                  {desc.image && <img src={image_desc} alt={desc.titulo} />}
                 </div>
               ))
             ) : (
