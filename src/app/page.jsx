@@ -103,9 +103,7 @@ export default function Home() {
                     <strong>{product.category}</strong>
                   </p>
                   <p>Descargas: {product.downloads}</p>
-                  <Link href={`/bots/${product.category}/${product.name}`}>
-                    Ver Mas..
-                  </Link>
+                  <Link href={product.image_url}>Ver Mas..</Link>
                 </li>
               ))}
         </ul>
@@ -124,9 +122,7 @@ export default function Home() {
                   <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
-                  <Link href={`/bots/${product.category}/${product.name}`}>
-                    Ver Mas..
-                  </Link>
+                  <Link href={product.image_url}>Ver Mas..</Link>
                 </li>
               ))}
         </ul>
@@ -145,9 +141,7 @@ export default function Home() {
                   <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
-                  <Link href={`/bots/${product.category}/${product.name}`}>
-                    Ver Mas..
-                  </Link>
+                  <Link href={product.image_url}>Ver Mas..</Link>
                 </li>
               ))}
         </ul>

@@ -89,11 +89,7 @@ const ProductPage = () => {
         <div className="product-view-content">
           <div className="product-view-content-img">
             {product.image && (
-              <img
-                src={`${BaseURL}${product.image}`}
-                width={100}
-                alt={product.name}
-              />
+              <img src={product.image_url} width={100} alt={product.name} />
             )}
           </div>
           <div className="product-view-content-info">
