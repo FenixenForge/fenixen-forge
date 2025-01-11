@@ -75,7 +75,6 @@ const ProductVersionHistoryPage = () => {
 
   const displayCategory = category.replace(/%20/g, " ");
   const displayName = product.name.replace(/%20/g, " ");
-  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
 
   return (
     <div>

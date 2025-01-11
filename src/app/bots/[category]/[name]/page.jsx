@@ -66,8 +66,6 @@ const ProductPage = () => {
     product.image || `/images/${displayName.toLowerCase()}-og.jpg`;
   const metaTwitterImage =
     product.image || `/images/${displayName.toLowerCase()}-twitter.jpg`;
-  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
-  const image_desc = `https://drive.google.com/uc?export=view&id=${desc.image_url}`;
 
   return (
     <div>
@@ -169,7 +167,9 @@ const ProductPage = () => {
                 <div key={desc.id} className="product-description-itemss">
                   <h3> {desc.titulo} </h3>
                   <p>{desc.description}</p>
-                  {desc.image && <img src={desc.image_url} alt={desc.titulo} />}
+                  {desc.image_url && (
+                    <img src={desc.image_url} alt={desc.titulo} />
+                  )}
                 </div>
               ))
             ) : (

@@ -81,7 +81,6 @@ const CategoryPage = () => {
   if (!products.length) return <div>No products found in this category.</div>;
 
   const displayCategory = category?.replace(/%20/g, " ");
-  const image_url = `https://drive.google.com/uc?export=view&id=${product.image_url}`;
   return (
     <>
       <div className="category-products-container">

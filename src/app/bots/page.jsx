@@ -46,7 +46,6 @@ const Category = () => {
 
   if (error) return <div>{error}</div>;
   if (!products.length) return <div>No products found.</div>;
-  const BaseURL = "https://api.fenixenforge.com";
   return (
     <>
       <div className="category-products-container">
