@@ -110,7 +110,11 @@ const ProductUpdatesPage = () => {
         <div className="product-view-content">
           <div className="product-view-content-img">
             {product.image && (
-              <img src={image_url} width={100} alt={product.name} />
+              <img
+                src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
+                width={100}
+                alt={product.name}
+              />
             )}
           </div>
           <div className="product-view-content-info">

@@ -44,8 +44,6 @@ const Category = () => {
     );
   }
 
-  const image_url = `https://drive.google.com/uc?export=view&id=${products.image_url}`;
-
   if (error) return <div>{error}</div>;
   if (!products.length) return <div>No products found.</div>;
   const BaseURL = "https://api.fenixenforge.com";
@@ -58,7 +56,10 @@ const Category = () => {
             <li key={product.id} className="category-product-item">
               <Link href={`/bots/${product.category}/${product.name}`}>
                 <div className="category-product-img">
-                  <img src={image_url} alt={product.name} />
+                  <img
+                    src={`https://drive.google.com/uc?export=view&id=${product.image_url}`}
+                    alt={product.name}
+                  />
                 </div>
                 <h2>{product.name}</h2>
                 <span>
