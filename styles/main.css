@@ -651,7 +651,7 @@ body {
   .category-product-img img {
     margin: 5%;
     width: 85%;
-    height: auto;
+    height: 50%;
     object-fit: cover;
     border-radius: 1vh;
     -webkit-border-radius: 1vh;
