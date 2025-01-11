@@ -53,7 +53,7 @@ export default function Home() {
     loadProducts();
   }, []);
 
-  const BaseURL = "https://api.fenixenforge.com/";
+  const BaseURL = "https://api.fenixenforge.com";
 
   return (
     <>
@@ -97,7 +97,7 @@ export default function Home() {
               ))
             : topDownloaded.map((product) => (
                 <li key={product.id}>
-                  <img src={`${BaseURL}${product.image}`} alt={product.name} />
+                  <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>
                     <strong>{product.category}</strong>
@@ -121,7 +121,7 @@ export default function Home() {
               ))
             : latestProducts.map((product) => (
                 <li key={product.id}>
-                  <img src={`${BaseURL}${product.image}`} alt={product.name} />
+                  <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
                   <Link href={`/bots/${product.category}/${product.name}`}>
@@ -142,7 +142,7 @@ export default function Home() {
               ))
             : botsProducts.map((product) => (
                 <li key={product.id}>
-                  <img src={`${BaseURL}${product.image}`} alt={product.name} />
+                  <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
                   <Link href={`/bots/${product.category}/${product.name}`}>

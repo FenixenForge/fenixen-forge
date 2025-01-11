@@ -46,7 +46,7 @@ const Category = () => {
 
   if (error) return <div>{error}</div>;
   if (!products.length) return <div>No products found.</div>;
-  const BaseURL = "https://api.fenixenforge.com/";
+  const BaseURL = "https://api.fenixenforge.com";
   return (
     <>
       <div className="category-products-container">
@@ -56,7 +56,7 @@ const Category = () => {
             <li key={product.id} className="category-product-item">
               <Link href={`/bots/${product.category}/${product.name}`}>
                 <div className="category-product-img">
-                  <img src={`${BaseURL}${product.image}`} alt={product.name} />
+                  <img src={`${BaseURL}/${product.image}`} alt={product.name} />
                 </div>
                 <h2>{product.name}</h2>
                 <span>
