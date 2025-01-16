@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
             <title>Mobile Fenixen Forge</title>
           </head>
           <body>
-            <Adsense></Adsense>
             {children}
+            <Adsense></Adsense>
             <script
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
@@ -57,9 +57,9 @@ export default function RootLayout({ children }) {
         <Navigation />
         <main className="main">
           <Ads />
-          <Adsense></Adsense>
 
           <div className="main-container">{children}</div>
+          <Adsense></Adsense>
         </main>
       </>
     );
@@ -85,12 +85,11 @@ export default function RootLayout({ children }) {
         <DetectMobile />
         {renderLayout()}
 
-        <Adsense></Adsense>
-
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
           crossorigin="anonymous"></script>
+        <Adsense></Adsense>
       </body>
     </html>
   );
