@@ -27,6 +27,10 @@ export default function RootLayout({ children }) {
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
               crossorigin="anonymous"></script>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+              crossorigin="anonymous"></script>
             <meta charset="UTF-8" />
             <meta
               name="viewport"
@@ -34,7 +38,13 @@ export default function RootLayout({ children }) {
             />
             <title>Mobile Fenixen Forge</title>
           </head>
-          <body>{children}</body>
+          <body>
+            {children}
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+              crossorigin="anonymous"></script>
+          </body>
         </html>
       );
     }
@@ -58,7 +68,8 @@ export default function RootLayout({ children }) {
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
-          crossorigin="anonymous"></script>
+          crossorigin="anonymous"
+        />
         <link
           rel="shortcut icon"
           href="/image/favicon/favicon.ico"
@@ -69,6 +80,10 @@ export default function RootLayout({ children }) {
       <body>
         <DetectMobile />
         {renderLayout()}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+          crossorigin="anonymous"></script>
       </body>
     </html>
   );
