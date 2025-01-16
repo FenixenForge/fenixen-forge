@@ -8,6 +8,7 @@ import Navigation from '../components/Navigation';
 import Ads from '../components/add';
 import DetectMobile from '../components/MobilDetect'; // Asegúrate de importarlo aquí
 import { usePathname } from 'next/navigation';
+import Adsense from 'components/adsense';
 
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Obtener la ruta actual
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
             <title>Mobile Fenixen Forge</title>
           </head>
           <body>
+            <Adsense></Adsense>
             {children}
             <script
               async
@@ -55,6 +57,8 @@ export default function RootLayout({ children }) {
         <Navigation />
         <main className="main">
           <Ads />
+          <Adsense></Adsense>
+
           <div className="main-container">{children}</div>
         </main>
       </>
@@ -80,6 +84,9 @@ export default function RootLayout({ children }) {
       <body>
         <DetectMobile />
         {renderLayout()}
+
+        <Adsense></Adsense>
+
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
