@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation';
 import Ads from '../components/add';
 import DetectMobile from '../components/MobilDetect'; // Asegúrate de importarlo aquí
 import { usePathname } from 'next/navigation';
-import Adsense from 'components/adsense';
+import Adsense from '../components/adsense';
 
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Obtener la ruta actual
