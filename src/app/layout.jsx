@@ -41,7 +41,6 @@ export default function RootLayout({ children }) {
           </head>
           <body>
             {children}
-            <Adsense></Adsense>
             <script
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
@@ -59,7 +58,6 @@ export default function RootLayout({ children }) {
           <Ads />
 
           <div className="main-container">{children}</div>
-          <Adsense></Adsense>
         </main>
       </>
     );
@@ -89,7 +87,6 @@ export default function RootLayout({ children }) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
           crossorigin="anonymous"></script>
-        <Adsense></Adsense>
       </body>
     </html>
   );
