@@ -88,7 +88,7 @@ const CategoryPage = () => {
         <ul className="category-products-list">
           {products.map((product) => (
             <li key={product.id} className="category-product-item">
-              <Link href={`/plugins/${product.category}/${product.name}`}>
+              <Link href={`/${product.category}/${product.name}`}>
                 <div className="category-product-img">
                   <img src={product.image_url} alt={product.name} />
                 </div>

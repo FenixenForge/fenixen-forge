@@ -100,7 +100,8 @@ export default function Home() {
                     <strong>{product.category}</strong>
                   </p>
                   <p>Descargas: {product.downloads}</p>
-                  <Link href={`/${product.category}/${product.name}`}>
+                  <Link
+                    href={`${product.category}/${product.category}/${product.name}`}>
                     Ver Mas..
                   </Link>
                 </li>
@@ -121,7 +122,8 @@ export default function Home() {
                   <img src={product.image_url} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
-                  <Link href={`/${product.category}/${product.name}`}>
+                  <Link
+                    href={`${product.category}/${product.category}/${product.name}`}>
                     Ver Mas..
                   </Link>
                 </li>

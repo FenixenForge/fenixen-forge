@@ -49,7 +49,7 @@ const Category = () => {
   return (
     <>
       <div className="category-products-container">
-        <h1>Products - Plugins</h1>
+        <h1>Products - plugins</h1>
         <ul className="category-products-list">
           {products.map((product) => (
             <li key={product.id} className="category-product-item">
