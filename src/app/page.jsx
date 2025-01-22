@@ -121,7 +121,7 @@ export default function Home() {
                   <img src={product.image_url} alt={product.name} />
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
-                  <Link href={`/bots/${product.category}/${product.name}`}>
+                  <Link href={`c/${product.category}/${product.name}`}>
                     Ver Mas..
                   </Link>
                 </li>
