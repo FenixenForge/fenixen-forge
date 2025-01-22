@@ -22,15 +22,15 @@ export default function RootLayout({ children }) {
           <head>
             <meta
               name="google-adsense-account"
+              content="ca-pub-9071856855843903"
+            />
+            <meta
+              name="google-adsense-account"
               content="ca-pub-5764070213530134"
             />
             <script
               async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
-              crossorigin="anonymous"></script>
-            <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
               crossorigin="anonymous"></script>
             <meta charset="UTF-8" />
             <meta
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
             {children}
             <script
               async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
               crossorigin="anonymous"></script>
           </body>
         </html>
@@ -66,12 +66,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-9071856855843903" />
+
         <meta name="google-adsense-account" content="ca-pub-5764070213530134" />
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
-          crossorigin="anonymous"
-        />
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
+          crossorigin="anonymous"></script>
         <link
           rel="shortcut icon"
           href="/image/favicon/favicon.ico"
@@ -85,7 +86,7 @@ export default function RootLayout({ children }) {
 
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5764070213530134"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
           crossorigin="anonymous"></script>
       </body>
     </html>
