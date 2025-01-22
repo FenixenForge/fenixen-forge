@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { fetchProducts } from "../Utils/api";
-import { Icon } from "@iconify/react";
-import img from "../lib/img";
-import Link from "next/link";
-import "../../styles/skeleton.css";
+import { useEffect, useState } from 'react';
+import { fetchProducts } from '../Utils/api';
+import { Icon } from '@iconify/react';
+import img from '../lib/img';
+import Link from 'next/link';
+import '../../styles/skeleton.css';
 
 function IndexSkeletonCard() {
   return (
@@ -40,11 +40,11 @@ export default function Home() {
         setLatestProducts(latest);
 
         const bots = products.filter(
-          (product) => product.category === "Bots Discord"
+          (product) => product.category === 'Bots Discord'
         );
         setBotsProducts(bots);
       } catch (error) {
-        console.error("Error loading products:", error);
+        console.error('Error loading products:', error);
       } finally {
         setIsLoading(false);
       }
@@ -75,10 +75,9 @@ export default function Home() {
             href=""
             className="cta-button"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             <span>
-              Únete Ahora{" "}
+              Únete Ahora{' '}
               <Icon icon="ic:baseline-discord" className="icon-banner" />
             </span>
           </a>
@@ -101,7 +100,7 @@ export default function Home() {
                     <strong>{product.category}</strong>
                   </p>
                   <p>Descargas: {product.downloads}</p>
-                  <Link href={`/bots/${product.category}/${product.name}`}>
+                  <Link href={`/${product.category}/${product.name}`}>
                     Ver Mas..
                   </Link>
                 </li>
